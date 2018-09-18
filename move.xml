@@ -45,7 +45,7 @@ copyright notices and license terms. -->
             <field name="name">In Payment Orders</field>
             <field name="sequence" eval="20"/>
             <field name="domain"
-                eval="[('reconciliation', '=', None), ('payment', '!=', None)]"
+                eval="[('reconciliation', '=', None), ('payments', '!=', None)]"
                 pyson="1"/>
             <field name="act_window" ref="act_payable_payment_move_line"/>
         </record>
@@ -92,7 +92,7 @@ copyright notices and license terms. -->
             <field name="name">In Payment Orders</field>
             <field name="sequence" eval="20"/>
             <field name="domain"
-                eval="[('reconciliation', '=', None), ('payment', '!=', None)]"
+                eval="[('reconciliation', '=', None), ('payments', '!=', None)]"
                 pyson="1"/>
             <field name="act_window" ref="act_receivable_payment_move_line"/>
         </record>
